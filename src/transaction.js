@@ -13,7 +13,7 @@ var zbufferutils = require('./bufferutils');
 /* More info: https://github.com/ZencashOfficial/zen/blob/master/src/script/standard.cpp#L377
  * Given an address, generates a pubkeyhash replay type script needed for the transaction
  * @param {String} address
- * @param {Number} blockHeight NOPE not in zelcash
+ * @param {Number} blockHeight NOPE not in litecoin
  * @param {String} pubKeyHash (optional)
  * return {String} pubKeyScript
  */
@@ -37,7 +37,7 @@ function mkPubkeyHashReplayScript(address, pubKeyHash) {
 /*
  * Given an address, generates a script hash replay type script needed for the transaction
  * @param {String} address
- * @param {Number} blockHeight NOPE not in zelcash
+ * @param {Number} blockHeight NOPE not in litecoin
  * return {String} scriptHash script
  */
 function mkScriptHashReplayScript(address) {
@@ -54,7 +54,7 @@ function mkScriptHashReplayScript(address) {
 /*
  * Given an address, generates an output script
  * @param {String} address
- * @param {Number} blockHeight NOPE not in zelcash
+ * @param {Number} blockHeight NOPE not in litecoin
  * return {String} output script
  */
 function addressToScript(address) {
@@ -226,7 +226,7 @@ function serializeTx(txObj) {
  * Creates a raw transaction
  * @param {[HISTORY]} history type, array of transaction history
  * @param {[RECIPIENTS]} recipient type, array of address on where to send coins to
- * @param {Number} blockHeight (latest - 300) NOPE not in zelcash
+ * @param {Number} blockHeight (latest - 300) NOPE not in litecoin
  * @return {TXOBJ} Transction Object (see TXOBJ type for info about structure)
  */
 function createRawTx(history, recipients) {

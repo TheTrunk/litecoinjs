@@ -63,10 +63,10 @@ function WIFToPrivKey(wifPk) {
 }
 
 /*
- * Converts public key to zelcash address
+ * Converts public key to litecoin address
  * @param {String} pubKey (public key)
  * @param {String} pubKeyHash (public key hash (optional, else use defaul))
- * @return {Sting} zelcash address
+ * @return {Sting} litecoin address
  */
 function pubKeyToAddr(pubKey, pubKeyHash) {
   pubKeyHash = pubKeyHash || zconfig.mainnet.pubKeyHash;
